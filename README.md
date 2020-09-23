@@ -1,5 +1,5 @@
 # react-native-qrcode-scanner
-A react native QR code scanner based on expo-camera library written in TypeScript.
+A react native QR code scanner based on expo library written in TypeScript.
 
 ### Install npm dependencies
 
@@ -34,22 +34,3 @@ This package automatically adds the `CAMERA` permission to your app. If you want
 <!-- Optional permissions -->
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 ```
-
-Adjust the `android/build.gradle` to add a new `maven` block after all other repositories as described below:
-
-```gradle
-allprojects {
-    repositories {
-
-        // * Your other repositories here *
-
-        // * Add a new maven block after other repositories / blocks *
-        maven {
-            // expo-camera bundles a custom com.google.android:cameraview
-            url "$rootDir/../node_modules/expo-camera/android/maven"
-        }
-    }
-}
-```
-
-The sourcecode for `cameraview` can be found at [`expo/cameraview`](https://github.com/expo/cameraview).
