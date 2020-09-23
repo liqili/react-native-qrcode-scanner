@@ -6,14 +6,14 @@ export default {
     screens: {
       Root: {
         screens: {
-          TabOne: {
+          BarCodeScan: {
             screens: {
-              TabOneScreen: 'one',
+              BarCodeScanScreen: 'barcode',
             },
           },
-          TabTwo: {
+          About: {
             screens: {
-              TabTwoScreen: 'two',
+              AboutScreen: 'about',
             },
           },
         },
