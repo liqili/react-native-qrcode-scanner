@@ -1,10 +1,15 @@
 # react-native-qrcode-scanner
 A react native QR code scanner based on expo-camera library written in TypeScript.
 
-### Install your npm dependencies
+### Install npm dependencies
 
 ```
 yarn
+```
+
+### Run on expo client
+```
+expo start
 ```
 
 ### Configure for iOS
